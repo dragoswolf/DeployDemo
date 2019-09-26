@@ -30,6 +30,6 @@ app.get('/about', (req, res)=>{
 //                                                          SERVER CONFIG
 //===================================================================================================================================================
 
-app.listen(3000, 'localhost', ()=>{
-    console.log('server running at port 3000.');
+app.listen(process.env.PORT, process.env.IP, ()=>{
+    console.log('Server running.');
 });
